@@ -1,6 +1,8 @@
-
+import 'sanitize.css';
+import 'sanitize.css/forms.css';
+import 'sanitize.css/typography.css';
 import StyledComponentsRegistry from "@/lib/registry";
-import {GlobalStyles} from "@/app/globals";
+import {GlobalStyles} from "@/styles/globals";
 
 export const metadata = {
     title: 'Create Next App',
@@ -12,8 +14,8 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body>
-        <GlobalStyles/>
         <StyledComponentsRegistry>
+            <GlobalStyles/>
             {children}
         </StyledComponentsRegistry>
         </body>
