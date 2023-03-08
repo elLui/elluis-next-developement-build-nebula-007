@@ -3,6 +3,7 @@ import 'sanitize.css/forms.css';
 import 'sanitize.css/typography.css';
 import StyledComponentsRegistry from "@/lib/registry";
 import {GlobalStyles} from "@/styles/globals";
+import BackgroundVideo from "@/components/background/background";
 
 export const metadata = {
     title: 'Create Next App',
@@ -16,6 +17,7 @@ export default function RootLayout({children}) {
         <body>
         <StyledComponentsRegistry>
             <GlobalStyles/>
+            <BackgroundVideo/>
             {children}
         </StyledComponentsRegistry>
         </body>

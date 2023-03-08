@@ -10,9 +10,13 @@ const HomeMain = styled.main`
 
 export default function Home() {
     return (
-        <HomeMain className="main">
 
-            <h1>hi beautiful</h1>
+
+        <HomeMain className="main">
+            <h2>hero</h2>
+            <h2>featured posts</h2>
         </HomeMain>
+
+
     )
 }
