@@ -1,9 +1,6 @@
 "use client";
-import Image from "next/image";
-import user_image_placeholder from "../../public/assets/images/11.png";
 import styled from "styled-components";
-
-
+import {motion} from "framer-motion";
 
 
 const HeroSectionStyles = styled.section`
@@ -49,29 +46,37 @@ const HeroSectionStyles = styled.section`
 `;
 
 
-
 export default function Hero() {
-	
-	
-	return (
-		
-		<section className="hero">
-			<h3>a place</h3>
-			
-			
-			<div className="image">
-				{/* <Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/> */ }
-			</div>
-			
-			<h1>elluis.codes</h1>
-			
-			
-			<p>to think</p>
-			<p>of things</p>
-		</section>
-	
-	);
-	
-	
-	
+
+
+    return (
+
+        <section className="hero">
+            <motion.h1
+                animate={{x: [500, 150, 50], opacity: [1, 0.75, 0.5, 0.75, 1], scale: [1, 1.5, 2, 1.5, 1]}}
+                transition={{
+                    duration: 5,
+                    delay: 0.3,
+                    ease: "easeInOut"
+                }}
+                initial={{opacity: 0, scale: 0.5}}
+                whileHover={{scale: 1.2}}
+            >animate this!
+            </motion.h1>
+
+
+            <div className="image">
+                {/* <Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/> */}
+            </div>
+
+            <h1>elluis.codes</h1>
+
+
+            <p>to think</p>
+            <p>of things</p>
+        </section>
+
+    );
+
+
 }
