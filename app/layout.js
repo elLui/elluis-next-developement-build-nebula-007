@@ -17,7 +17,7 @@ export default function RootLayout({children}) {
         <body>
         <StyledComponentsRegistry>
             <GlobalStyles/>
-            <BackgroundVideo/>
+            {/* <BackgroundVideo/> */}
             {children}
         </StyledComponentsRegistry>
         </body>

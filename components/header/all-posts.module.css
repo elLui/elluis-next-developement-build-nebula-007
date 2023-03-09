@@ -1,0 +1,29 @@
+.header .posts {
+  width: 90%;
+  max-width: 60rem;
+  margin: var(--size-8) auto;
+}
+.header .posts h1 {
+  font-size: var(--size-8);
+  color: var(--color-grey-800);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header .posts h1 {
+    font-size: var(--size-16);
+  }
+}
+.header .box {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--green);
+  font-weight: 600;
+  color: var(--light);
+  display: block;
+}
+
+/*# sourceMappingURL=all-posts.module.css.map */
