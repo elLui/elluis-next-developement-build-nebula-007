@@ -85,6 +85,19 @@ export const GlobalStyles = createGlobalStyle`
     background-color: var(--color-grey-500);
     color: var(--color-grey-dark-2);
   }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
 `;
 
 // //original code:
